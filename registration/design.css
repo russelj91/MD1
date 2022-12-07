@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700;800&display=swap');
+*{
+    font-family: 'Montserrat', sans-serif;
+    
+}
+
+
+
+.navbar a:hover{
+    color: skyblue;
+}
+
+
+#bg{
+    background-image: url(bg.jpg);
+}
+
+
+
+#card{
+    background: orange;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 10px;
+
+
+}
+
+#regform{
+    margin-left: 400px;
+  
+}
+
+
+
+#footer{
+    font-size: 15px;
+    background: gray;
+    padding: 1px;
+    
+}
+
+span a{
+    text-decoration: none;
+    color: red;
+}
+span a:hover{
+    color: black;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

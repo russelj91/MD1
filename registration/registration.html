@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+         <!-- CSS only -->
+        <link rel="stylesheet" type="text/css" href="design.css">
+
+        <link href="../bs/bootstrap.min.css" rel="stylesheet">
+        <script src="../js/bootstrap.bundle.min.js"></script>
+      
+    <title>Registration</title>
+  </head>
+  <body>
+
+
+  <div> 
+
+
+
+</div>
+
+
+    <!--NAVIGATION AREA-->
+
+
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark py-2">  <!-- LG size para pag naka full size browser mo gawas
+                                     tanan navigation, navbar dark(text color) and bg for navbar color, margin sa Y-axis (Top Bottom)-->
+                                     
+        <div class="container">
+        <a class="navbar-brand" href="#">
+            <img src="../image/philippine.png" height="35">
+            InCodenito</a> <!-- Image and Ttitle part-->
+
+
+                    
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
+
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+        <div class="collapse navbar-collapse" id="navmenu"> <!--Nav bar collapse for mobile device-->
+          <ul class="navbar-nav ms-auto">                      <!-- MS auto to switch right-->
+            <li class="nav-item">
+              <a class="nav-link "   href="../index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../index.html">Log In</a>
+            </li>
+           
+            <li class="nav-item">
+                <a class="nav-link disabled"  href="../registration/registration.html"> Sign Up</a></li> <!--     <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>-->
+           
+          </ul>
+        </div>
+        </div>
+    </div>
+</nav>
+
+
+
+  <section class=" p-5 text-sm-start" id="bg">
+<div class="container py-5 text-center">
+
+
+<div class="row col-md-4 " id="regform">
+
+  <div class="col">
+        <div class="card" id="card" >
+        <h2 class="text-light">Registration Form</h2>
+
+    <form  action="" method="post" autocomplete="off">
+      
+        <div class="form-group">
+        <label for="name">Name</label>
+        <input type="text" class="form-control" name="name" id = "name" required value="">
+        </div> <br>
+
+
+
+        <div class="form-group">
+        <label for="username">Username</label>
+      <input type="text" class="form-control" name="username" id = "username" required value=""> <br>
+        </div>
+
+        <div class="form-group">
+        <label for="email">Email</label>
+      <input type="email" class="form-control"  name="email" id = "email" required value=""> <br>
+        </div>
+
+        <div class="form-group">
+        <label for="password">Password</label>
+      <input type="password" class="form-control" name="password" id = "password" required value=""> <br>
+        </div>
+
+        <div class="form-group">
+        <label for="confirmpassword">Confirm Password</label>
+      <input type="password"  class="form-control" name="confirmpassword" id = "confirmpassword" required value=""> <br>
+
+ 
+      
+      <button type="submit" class="btn btn-primary btn-block " name="submit">Register</button>
+        </div>
+    </form>
+        </div>
+    <br>
+   
+
+</section>
+    <footer class="text-center" id="footer">
+ 
+<p>Develop by <span><a href="Russel">Russel</a>&copy;</span></p>
+</footer>
+
+  </body>
+</html>

@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+         <!-- CSS only -->
+         <link rel="stylesheet" type="text/css" href="css/style.css">
+         <link href="bs/bootstrap.min.css" rel="stylesheet">
+         <script src="js/bootstrap.bundle.min.js"></script>
+    <title>Front-End</title>
+</head>
+<body>
+
+
+    <!--NAVIGATION AREA-->
+
+
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark py-2">  <!-- LG size para pag naka full size browser mo gawas
+                                     tanan navigation, navbar dark(text color) and bg for navbar color, margin sa Y-axis (Top Bottom)-->
+                                     
+        <div class="container">
+        <a class="navbar-brand" href="#">
+            <img src="image/philippine.png" height="35">
+            InCodenito</a> <!-- Image and Ttitle part-->
+
+
+                    
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
+
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+        <div class="collapse navbar-collapse" id="navmenu"> <!--Nav bar collapse for mobile device-->
+          <ul class="navbar-nav ms-auto">                      <!-- MS auto to switch right-->
+            <li class="nav-item">
+              <a class="nav-link "   href="index.html">Home</a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link disabled" href="#">Browse Job Posting</a>
+              </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="about.html">About</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Log In</a>
+            </li>
+           
+            <li class="nav-item">
+                <a class="nav-link" href="registration/registration.html"> Sign Up</a></li> <!--     <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>-->
+           
+          </ul>
+        </div>
+        </div>
+    </div>
+</nav>
+
+
+<section class="bg-info text-light py-2">
+        <div class="container">
+                <h2>Top Jobs</h2>
+        </div>
+</section>
+
+    <section>
+<div class="container-fluid">
+    <div class="row m-2">
+        <div class="col-2 bg-light text-dark mx-5 my-5">
+            <h4>Filter by:</h4>
+            <hr>
+            <h6>Budget:</h6>
+
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                <label class="form-check-label" for="flexCheckDefault">
+                  Fixed Price Projects
+                </label>
+              </div>
+
+              <div class="input-group my-3 w-9">
+                <input type="text" class="form-control" placeholder="min">
+                    &nbsp;
+                <input type="text" class="form-control" placeholder="max">
+             </div>
+
+             <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                <label class="form-check-label" for="flexCheckDefault">
+                Hourly Projects
+                </label>
+              </div>
+
+                <div class="input-group my-3 w-9">
+                <input type="text" class="form-control" placeholder="min">
+                    &nbsp;
+                <input type="text" class="form-control" placeholder="max">
+                </div>
+                   
+             
+                <div class="my-3 mx-2">
+                    <select class="form-select" aria-label="Default select example">
+                        <option selected>Work Durations</option>
+                        <option value="1">Less than 1 week</option>
+                        <option value="2">1 week to 4 weeks</option>
+                        <option value="3">1 Month to 3 Months</option>
+                        <option value="3">3 Months to 6 Months</option>
+                      </select>
+                </div>
+
+                
+              
+                <h6>to</h6>
+
+                <div class="my-4">
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                        Local Jobs
+                    </label>
+                  </div>
+
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                        Featured Jobs
+                    </label>
+                  </div>
+
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                      Recruiter Jobs
+                    </label>
+                  </div>
+
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                      Full Time Jobs
+                    </label>
+                  </div>
+                </div>
+             
+
+                <div class="my-3 mx-2">
+                    <select class="form-select" aria-label="Default select example">
+                        <option selected>Skills Category</option>
+                        <option value="1">Front-End Developer</option>
+                        <option value="2">Back-End Developer</option>
+                        <option value="3">Full-Stack Developer</option>
+                        <option value="3">iOs Developer</option>
+                        <option value="3">Android Developer</option>
+                        <option value="3">SEO</option>
+                        <option value="3">Virtual Assistant</option>
+                        <option value="3">Graphics Designer</option>
+                        <option value="3">Data Analyst</option>
+                        <option value="3">Data Entry</option>
+                      </select>
+                </div>
+             
+        </div>
+
+       <div class="col bg-light text-dark mx-5 my-5">
+        <div class="col">
+        </div>
+            
+       
+
+         <!--Job post Area-->
+
+        <div class="container-fluid" id="jobs">   <!-- CONTAINER FLUID JOB POSTING DIV-->
+
+                
+                <div class="row">       <!-- DIV  ROW START JOB POSTING-->
+
+
+
+                    <ul class="nav nav-tabs" id="myTab" role="tablist">
+                        <li class="nav-item" role="presentation">
+                          <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true">Lowest Budget</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                          <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false">Highest Budget</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                          <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact" type="button" role="tab" aria-controls="contact" aria-selected="false">Lowest Bids</button>
+                        </li>
+                         <li class="nav-item" role="presentation">
+                          <button class="nav-link " id="about-tab" data-bs-toggle="tab" data-bs-target="#about" type="button" role="tab" aria-controls="about" aria-selected="false">Highest Bids</button>
+                        </li>
+                      </ul>
+                      <div class="tab-content" id="myTabContent">
+                        <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+
+
+
+
+                            <div class="col-8 my-1">
+                                <a href="#"><h3>Create E-Commerce Website</h3></a>
+                                <p>i need a website of minimum of 8 pages..Original, African braids... its going to be a website for hair braiders/stylist and budget is 50pounds</p>
+                                <button type="button" class="btn btn-primary btn-sm">HTML</button>
+                                <button type="button" class="btn btn-primary btn-sm">Web Design</button>
+                                <button type="button" class="btn btn-primary btn-sm">Ecommerce</button>
+                                <button type="button" class="btn btn-primary btn-sm">Full Stack Developer</button>
+                                
+                         </div>
+                        
+                         
+
+                         <div class="col-2 ms-auto">
+                            <h6>500&#8369;/hr</h6><p>avg bid</p>
+                     
+
+
+                         </div>
+                        
+
+                     
+                         
+                            <div class="col-8 my-1">
+                                <a href=""><h3>Create Landing Page</h3></a> 
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                                        Vitae autem, corporis omnis quis ratione reiciendis provident labore 
+                                        mollitia! Officiis, architecto!</p>
+                                        <button type="button" class="btn btn-primary btn-sm">HTML</button>
+                                        <button type="button" class="btn btn-primary btn-sm">Web Design</button>
+                                        <button type="button" class="btn btn-primary btn-sm">Ecommerce</button>
+                                        <button type="button" class="btn btn-primary btn-sm">Full Stack Developer</button>
+                             </div>
+    
+                             <div class="col-2 ms-auto">
+                                <h6>500&#8369;/hr</h6><p>avg bid</p>
+    
+    
+                             </div>
+    
+    
+                        
+
+                         
+                            <div class="col-8">
+                                <a href=""><h3>Graphics Designer</h3></a>
+                                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ducimus quae magnam totam non ex modi 
+                                        minima ut ipsam facere amet deleniti dolorem repudiandae placeat 
+                                        deserunt autem, exercitationem eveniet libero ad.</p>
+                                        <button type="button" class="btn btn-primary btn-sm">Logo Design</button>
+                                        <button type="button" class="btn btn-primary btn-sm">Template Design</button>
+                                        <button type="button" class="btn btn-primary btn-sm">Graphics</button>
+                           
+                             </div>
+    
+                             <div class="col-2 ms-auto">
+                                <h6>500&#8369;/hr</h6><p>avg bid</p>
+    
+    
+                             </div>
+    
+    
+                     
+
+
+                      
+                            <div class="col-8">
+                                <a href=""><h3>Looking for Virtual Assistant</h3></a>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga consequatur aliquid aut optio ullam enim?</p>
+                                    <button type="button" class="btn btn-primary btn-sm">VA</button>
+                                    <button type="button" class="btn btn-primary btn-sm">Amazon</button>
+                                    <button type="button" class="btn btn-primary btn-sm">Research</button>
+             
+                             </div>
+    
+                             <div class="col-2 ms-auto">
+                                <h6>500&#8369;/hr</h6><p>avg bid</p>
+    
+    
+                             </div>
+    
+                        </div>
+
+
+
+                        <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+
+
+                            <div class="col-8 my-1">
+                                <a href="#"><h3>Lorem ipsum dolor sit amet.</h3></a>
+                                <p>i need a website of minimum of 8 pages..Original, African braids... its going to be a website for hair braiders/stylist and budget is 50pounds</p>
+                                <button type="button" class="btn btn-primary btn-sm">HTML</button>
+                                <button type="button" class="btn btn-primary btn-sm">Web Design</button>
+                                <button type="button" class="btn btn-primary btn-sm">Ecommerce</button>
+                                <button type="button" class="btn btn-primary btn-sm">Full Stack Developer</button>
+                                
+                         </div>
+                        
+                         
+
+                         <div class="col-2 ms-auto">
+                            <h6>500&#8369;/hr</h6><p>avg bid</p>
+                     
+
+
+                         </div>
+                        
+
+                     
+                         
+                            <div class="col-8 my-1">
+                                <a href=""><h3>Create Landing Page</h3></a> 
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                                        Vitae autem, corporis omnis quis ratione reiciendis provident labore 
+                                        mollitia! Officiis, architecto!</p>
+                                        <button type="button" class="btn btn-primary btn-sm">HTML</button>
+                                        <button type="button" class="btn btn-primary btn-sm">Web Design</button>
+                                        <button type="button" class="btn btn-primary btn-sm">Ecommerce</button>
+                                        <button type="button" class="btn btn-primary btn-sm">Full Stack Developer</button>
+                             </div>
+    
+                             <div class="col-2 ms-auto">
+                                <h6>500&#8369;/hr</h6><p>avg bid</p>
+    
+    
+                             </div>
+    
+    
+                        
+
+                         
+                            <div class="col-8">
+                                <a href=""><h3>Graphics Designer</h3></a>
+                                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ducimus quae magnam totam non ex modi 
+                                        minima ut ipsam facere amet deleniti dolorem repudiandae placeat 
+                                        deserunt autem, exercitationem eveniet libero ad.</p>
+                                        <button type="button" class="btn btn-primary btn-sm">Logo Design</button>
+                                        <button type="button" class="btn btn-primary btn-sm">Template Design</button>
+                                        <button type="button" class="btn btn-primary btn-sm">Graphics</button>
+                           
+                             </div>
+    
+                             <div class="col-2 ms-auto">
+                                <h6>500&#8369;/hr</h6><p>avg bid</p>
+    
+    
+                             </div>
+    
+    
+                     
+
+
+                      
+                            <div class="col-8">
+                                <a href=""><h3>Looking for Virtual Assistant</h3></a>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga consequatur aliquid aut optio ullam enim?</p>
+                                    <button type="button" class="btn btn-primary btn-sm">VA</button>
+                                    <button type="button" class="btn btn-primary btn-sm">Amazon</button>
+                                    <button type="button" class="btn btn-primary btn-sm">Research</button>
+             
+                             </div>
+    
+                             <div class="col-2 ms-auto">
+                                <h6>500&#8369;/hr</h6><p>avg bid</p>
+    
+    
+                             </div>
+    
+
+                        </div>
+
+
+                        <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+
+                            <div class="col-8 my-1">
+                                <a href="#"><h3>Lorem ipsum dolor sit amet consectetur.</h3></a>
+                                <p>i need a website of minimum of 8 pages..Original, African braids... its going to be a website for hair braiders/stylist and budget is 50pounds</p>
+                                <button type="button" class="btn btn-primary btn-sm">HTML</button>
+                                <button type="button" class="btn btn-primary btn-sm">Web Design</button>
+                                <button type="button" class="btn btn-primary btn-sm">Ecommerce</button>
+                                <button type="button" class="btn btn-primary btn-sm">Full Stack Developer</button>
+                                
+                         </div>
+                        
+                         
+
+                         <div class="col-2 ms-auto">
+                            <h6>500&#8369;/hr</h6><p>avg bid</p>
+                     
+
+
+                         </div>
+                        
+
+                     
+                         
+                            <div class="col-8 my-1">
+                                <a href=""><h3>Create Landing Page</h3></a> 
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                                        Vitae autem, corporis omnis quis ratione reiciendis provident labore 
+                                        mollitia! Officiis, architecto!</p>
+                                        <button type="button" class="btn btn-primary btn-sm">HTML</button>
+                                        <button type="button" class="btn btn-primary btn-sm">Web Design</button>
+                                        <button type="button" class="btn btn-primary btn-sm">Ecommerce</button>
+                                        <button type="button" class="btn btn-primary btn-sm">Full Stack Developer</button>
+                             </div>
+    
+                             <div class="col-2 ms-auto">
+                                <h6>500&#8369;/hr</h6><p>avg bid</p>
+    
+    
+                             </div>
+    
+    
+                        
+
+                         
+                            <div class="col-8">
+                                <a href=""><h3>Graphics Designer</h3></a>
+                                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ducimus quae magnam totam non ex modi 
+                                        minima ut ipsam facere amet deleniti dolorem repudiandae placeat 
+                                        deserunt autem, exercitationem eveniet libero ad.</p>
+                                        <button type="button" class="btn btn-primary btn-sm">Logo Design</button>
+                                        <button type="button" class="btn btn-primary btn-sm">Template Design</button>
+                                        <button type="button" class="btn btn-primary btn-sm">Graphics</button>
+                           
+                             </div>
+    
+                             <div class="col-2 ms-auto">
+                                <h6>500&#8369;/hr</h6><p>avg bid</p>
+    
+    
+                             </div>
+    
+    
+                     
+
+
+                      
+                            <div class="col-8">
+                                <a href=""><h3>Looking for Virtual Assistant</h3></a>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga consequatur aliquid aut optio ullam enim?</p>
+                                    <button type="button" class="btn btn-primary btn-sm">VA</button>
+                                    <button type="button" class="btn btn-primary btn-sm">Amazon</button>
+                                    <button type="button" class="btn btn-primary btn-sm">Research</button>
+             
+                             </div>
+    
+                             <div class="col-2 ms-auto">
+                                <h6>500&#8369;/hr</h6><p>avg bid</p>
+    
+    
+                             </div>
+                             </div>
+
+
+
+                             <div class="tab-pane fade show active" id="about" role="tabpanel" aria-labelledby="about-tab">
+
+
+
+
+                                <div class="col-8 my-1">
+                                    <a href="#"><h3>AAAAAAAAAAAAAAAAA</h3></a>
+                                    <p>i need a website of minimum of 8 pages..Original, African braids... its going to be a website for hair braiders/stylist and budget is 50pounds</p>
+                                    <button type="button" class="btn btn-primary btn-sm">HTML</button>
+                                    <button type="button" class="btn btn-primary btn-sm">Web Design</button>
+                                    <button type="button" class="btn btn-primary btn-sm">Ecommerce</button>
+                                    <button type="button" class="btn btn-primary btn-sm">Full Stack Developer</button>
+                                    
+                             </div>
+                            
+                             
+    
+                             <div class="col-2 ms-auto">
+                                <h6>500&#8369;/hr</h6><p>avg bid</p>
+                         
+    
+    
+                             </div>
+                            
+    
+                         
+                             
+                                <div class="col-8 my-1">
+                                    <a href=""><h3>Create Landing Page</h3></a> 
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                                            Vitae autem, corporis omnis quis ratione reiciendis provident labore 
+                                            mollitia! Officiis, architecto!</p>
+                                            <button type="button" class="btn btn-primary btn-sm">HTML</button>
+                                            <button type="button" class="btn btn-primary btn-sm">Web Design</button>
+                                            <button type="button" class="btn btn-primary btn-sm">Ecommerce</button>
+                                            <button type="button" class="btn btn-primary btn-sm">Full Stack Developer</button>
+                                 </div>
+        
+                                 <div class="col-2 ms-auto">
+                                    <h6>500&#8369;/hr</h6><p>avg bid</p>
+        
+        
+                                 </div>
+        
+        
+                            
+    
+                             
+                                <div class="col-8">
+                                    <a href=""><h3>Graphics Designer</h3></a>
+                                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ducimus quae magnam totam non ex modi 
+                                            minima ut ipsam facere amet deleniti dolorem repudiandae placeat 
+                                            deserunt autem, exercitationem eveniet libero ad.</p>
+                                            <button type="button" class="btn btn-primary btn-sm">Logo Design</button>
+                                            <button type="button" class="btn btn-primary btn-sm">Template Design</button>
+                                            <button type="button" class="btn btn-primary btn-sm">Graphics</button>
+                               
+                                 </div>
+        
+                                 <div class="col-2 ms-auto">
+                                    <h6>500&#8369;/hr</h6><p>avg bid</p>
+        
+        
+                                 </div>
+        
+        
+                         
+    
+    
+                          
+                                <div class="col-8">
+                                    <a href=""><h3>Looking for Virtual Assistant</h3></a>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga consequatur aliquid aut optio ullam enim?</p>
+                                        <button type="button" class="btn btn-primary btn-sm">VA</button>
+                                        <button type="button" class="btn btn-primary btn-sm">Amazon</button>
+                                        <button type="button" class="btn btn-primary btn-sm">Research</button>
+                 
+                                 </div>
+        
+                                 <div class="col-2 ms-auto">
+                                    <h6>500&#8369;/hr</h6><p>avg bid</p>
+        
+        
+                                 </div>
+        
+                            </div>
+    
+    
+    
+                        </div>
+                      </div>
+
+                      
+                        <hr>
+                       
+
+
+
+                  
+
+
+              </div>                    <!-- DIV ROW END JOB POSTING-->
+
+
+        </div>                          <!-- CONTAINER FLUID JOB POSTING BID-->
+
+        <!-- ENd Job post Area-->
+
+
+        </div>
+    </div>
+</div>
+    </section>
+<!-- Job posting End section-->
+
+<footer class="text-center" id="footer">
+ 
+    <p>Develop by <span><a href="Russel">Russel</a>&copy;</span></p>
+    </footer>
+    
