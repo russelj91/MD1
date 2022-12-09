@@ -48,7 +48,7 @@ span:hover{
     }
 
 
-    #lastcol, .card-body{
+#lastcol, .card-body{
         border-style: none;
     } 
 
@@ -133,7 +133,7 @@ span a:hover{
 
 
 #bg-image{
-    width: 100%;
+    max-width: 100%;
     height: 550px;
     overflow: hidden;
     position: relative;
@@ -181,7 +181,6 @@ span a:hover{
 
 
 
-
 .home-newsletter {
     padding: 150px 0;
 }
@@ -216,3 +215,22 @@ span a:hover{
     background: #243c4f;
     color: #fff;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
